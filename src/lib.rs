@@ -98,7 +98,7 @@ fn handler(selection: Match, config: &Config) -> HandleResult {
     if let Err(why) = Command::new("sh")
         .arg("-c")
         .arg(format!(
-            "xdg-open https://{}",
+            "xdg-open http://{}",
             engine
                 .value()
                 .replace("{}", &encode(&selection.title.to_string()))
