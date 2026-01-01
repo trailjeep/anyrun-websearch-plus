@@ -13,7 +13,7 @@ enum Engine {
 impl Engine {
     fn value(&self) -> &str {
         match self {
-            Self::Google => "google.com/search?q={}",
+            Self::Google => "taz.wyvern-shilling.ts.net:8000/web?s={}",
             Self::Custom { url, .. } => url,
         }
     }
